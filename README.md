@@ -1,5 +1,7 @@
 # AlerteTrade - Système d'alertes Bollinger Bands
 
+Info utile : J'utilise ce bot crée a 100% avec une Ai ce bot a pour simple but de m'aider dans ma stratégie de trading. 
+
 Système d'alerte intelligent qui te prévient **AVANT** que le prix touche les bandes de Bollinger, pour que tu sois déjà prêt quand l'élastique commence à se tendre.
 
 ## 🎯 Philosophie
