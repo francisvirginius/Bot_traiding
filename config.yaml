@@ -1,0 +1,35 @@
+# Configuration des alertes Bollinger Bands
+bollinger_bands:
+  period: 20                    # Période pour le calcul de la moyenne mobile
+  multiplier: 2.0              # Multiplicateur pour l'écart-type
+  proximity_percent: 0.5       # Distance en % pour déclencher l'alerte
+
+trading:
+  data_source: "twelvedata"    # Source de données: "binance" ou "twelvedata"
+  symbol: "XAU/USD"            # Paire à surveiller (Gold - format Twelve Data)
+  interval: "1h"               # Intervalle de temps (1m, 5m, 15m, 1h, 4h, 1d)
+  check_interval: 60           # Intervalle de vérification en secondes
+
+alerts:
+  enabled: true
+  methods:
+    - console                  # Affichage dans la console
+    - telegram                 # Notification Telegram (à configurer)
+    # - email                  # Email (à configurer)
+
+# Configuration Telegram (optionnel)
+telegram:
+  bot_token: "YOUR_BOT_TOKEN"
+  chat_id: "YOUR_CHAT_ID"
+
+# Configuration Email (optionnel)
+email:
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: "your_email@gmail.com"
+  sender_password: "your_app_password"
+  receiver_email: "receiver@gmail.com"
+
+# Configuration Twelve Data (optionnel - pour plus de requêtes)
+twelvedata:
+  api_key: ""  # Laisse vide pour version gratuite (8 requêtes/min)
