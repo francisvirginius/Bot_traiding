@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Script principal pour surveiller les Bandes de Bollinger et envoyer des alertes
 """
 import time
 import sys
+import io
 from datetime import datetime
+
+# Configuration de l'encodage UTF-8 pour Windows
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 from src.config_loader import ConfigLoader
 from src.data_fetcher import DataFetcher
 from src.twelve_data_fetcher import TwelveDataFetcher
