@@ -5,3 +5,9 @@ ta>=0.11.0
 python-dotenv>=1.0.0
 requests>=2.31.0
 twelvedata>=1.2.0
+# Gold Bot dependencies
+pandas-ta>=0.3.14b0
+yfinance>=0.2.0
+fredapi>=0.5.1
+beautifulsoup4>=4.12.0
+pyyaml>=6.0

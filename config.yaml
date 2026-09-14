@@ -33,3 +33,15 @@ email:
 # Configuration Twelve Data (optionnel - pour plus de requêtes)
 twelvedata:
   api_key: ""  # Laisse vide pour version gratuite (8 requêtes/min)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Gold Bot — Robot de proposition de trades XAU/USD (4 couches)
+# ─────────────────────────────────────────────────────────────────────────────
+gold_bot:
+  capital: 10000          # Capital en USD
+  risk_pct: 0.01          # 1% de risque par trade
+  check_interval: 3600    # Vérification toutes les heures (en secondes)
+  timeframe: "1h"         # Timeframe pour la couche 4 (technique)
+  cot_zscore_threshold: 1.5   # Seuil z-score COT pour saturation
+  calendar_block_hours: 4     # Bloquer si événement dans les N heures
+  calendar_reduce_hours: 24   # Réduire la taille si événement dans les N heures
